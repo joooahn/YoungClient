@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    >
+
+    <LinearLayout
+        android:id="@+id/helpTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/stroke"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#FFFFFF"
+            android:drawableBottom="@android:color/black"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="도움말"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/askHomeButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/helpTitleBar"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/stroke">
+
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ask_home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="홈 화면 도움말"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/askMapButton"
+        android:layout_below="@+id/askHomeButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:background="@drawable/stroke"
+        >
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/ask_map"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="지도 화면 도움말"
+            android:textSize="17sp"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/askSettingButton"
+        android:layout_below="@+id/askMapButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:background="@drawable/stroke"
+        >
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/ask_settings"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="설정 화면 도움말"
+            android:textSize="17sp"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

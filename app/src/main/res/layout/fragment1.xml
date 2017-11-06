@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mapTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/stroke"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="지도"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <com.nhn.android.maps.NMapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/mapTitleBar" />
+
+    <ImageButton
+        android:id="@+id/top3static"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/mapTitleBar"
+        android:background="@drawable/map_visit_btn_gray" />
+
+    <ImageButton
+        android:id="@+id/refreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top3static"
+        android:background="@drawable/map_now_btn" />
+
+</RelativeLayout>

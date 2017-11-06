@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/start">
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="156dp"
+        android:layout_height="66dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/splash_logo" />
+
+    <ImageButton
+        android:layout_below="@+id/splash_logo"
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:src="@drawable/start_btn"
+        android:background="@android:color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/joinButton"
+        android:layout_below="@id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/email_join_btn"
+        android:background="@android:color/transparent"/>
+
+</RelativeLayout>

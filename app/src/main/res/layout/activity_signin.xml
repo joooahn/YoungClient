@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signRelative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/signInTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/stroke"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="회원가입"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#FFFFFF"
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_below="@id/signInTitleBar"
+        android:id="@+id/splash_logo"
+        android:layout_width="111dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/splash_logo" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/splash_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:width="268dp"
+        android:height="50dp"
+        android:background="#F3F3F3"
+        android:drawableLeft="@drawable/join_message"
+        android:drawablePadding="18dp"
+        android:hint="이메일"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:textColor="#95989A"
+        android:textColorHint="#95989A"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/pwEditText"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/emailEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="268dp"
+        android:height="50dp"
+        android:background="#F3F3F3"
+        android:drawableLeft="@drawable/join_lock"
+        android:drawablePadding="18dp"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:paddingLeft="22dp"
+        android:textColor="#95989A"
+        android:textColorHint="#95989A"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/confirmpwEditText"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pwEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="268dp"
+        android:height="50dp"
+        android:background="#F3F3F3"
+        android:drawableLeft="@drawable/join_lock"
+        android:drawablePadding="18dp"
+        android:hint="비밀번호 확인"
+        android:inputType="textPassword"
+        android:paddingLeft="22dp"
+        android:textColor="#95989A"
+        android:textColorHint="#95989A"
+        android:textSize="15dp" />
+
+    <ImageButton
+        android:id="@+id/joinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/join_btn" />
+
+</RelativeLayout>

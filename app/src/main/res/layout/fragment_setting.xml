@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/settingTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/stroke"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="설정"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/settingHome"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/settingTitleBar"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/stroke">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ask_home" />
+
+        <TextView
+            android:id="@+id/homeLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:text="어르신 집위치 설정"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settingVersion"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@id/settingHome"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/setting_stroke">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/info" />
+
+        <TextView
+            android:id="@+id/versionInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:text="버전 안내"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settingDevelopers"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@id/settingVersion"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/stroke">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/developer" />
+
+        <TextView
+            android:id="@+id/developerInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:text="개발자 소개"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
